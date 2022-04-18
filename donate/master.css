@@ -1,0 +1,82 @@
+body {
+	align-items: center;
+	background-color: #0c0c0c;
+	color: #f8f8f8;
+	display: flex;
+	flex-flow: column;
+	font-family: monospace;
+	font-size: 1.25em;
+}
+
+header > img {
+	max-width: calc(100vw - 2em);
+}
+
+main {
+	width: 50vw;
+}
+
+main > p {
+	margin: 0.5em;
+	text-indent: 2em;
+}
+
+p {
+	text-align: justify;
+}
+
+a {
+	color: #c8c8f8;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.signature {
+	text-align: right;
+	margin-bottom: 2em;
+}
+
+#cards {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+}
+
+.card {
+	background-color: #1c1c1c;
+	border-radius: 1rem;
+	cursor: pointer;
+	padding: 1rem;
+	width: 20rem;
+}
+
+.card:hover {
+	background-color: #262626;
+	transition: 0.5s;
+}
+
+.card > img {
+	width: 100%;
+	border-radius: inherit;
+}
+
+@media (max-width:960px) {
+	main {
+		width: 95vw;
+	}
+
+	#cards {
+		gap: 0.25em;
+	}
+
+	.card {
+		padding: 0.5em;
+	}
+
+	.card > p {
+		text-align: left;
+	}
+}
