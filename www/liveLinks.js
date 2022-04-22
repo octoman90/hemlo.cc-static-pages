@@ -1,5 +1,9 @@
 [...document.querySelectorAll(".card")].forEach((card) => {
-	card.onclick = () => {
-		card.querySelector("a").click()
+	card.onmousedown = (e) => {
+		if (e.button > 1) return
+
+		const link = card.querySelector("a")
+		link.target = e.button ? "_blank" : ""
+		link.click()
 	}
 })
