@@ -54,6 +54,11 @@ a:hover {
 	border-radius: inherit;
 }
 
+h1 {
+	height: 0;
+	opacity: 0;
+}
+
 @media (max-width:960px) {
 	main {
 		width: 95vw;
